@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ app_name }}</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <h1>{{ app_name }}</h1>
+          <p>Personal homelab homepage</p>
+        </div>
+        <button id="refresh-status" class="btn btn-light" type="button">Refresh Status</button>
+      </header>
+      {% block content %}{% endblock %}
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
